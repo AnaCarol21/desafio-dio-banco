@@ -12,7 +12,7 @@ public abstract class Conta implements IConta {
         this.agencia = AGENCIA_PADRAO;
         this.numero = SEQUENCIAL++;
         this.saldo = 0.0;
-        this.cliente = cliente;
+        this.cliente = cliente;        
     }
 
     @Override
@@ -48,5 +48,6 @@ public abstract class Conta implements IConta {
         System.out.println(String.format("Agencia %d",this.agencia));
         System.out.println(String.format("Numero %d",this.numero));
         System.out.println(String.format("Saldo %.2f",this.saldo));
+
     }
 }
